@@ -110,6 +110,27 @@ async function destroyProduct(req, res, next) {
   }
 }
 
+async function showProducts (res, req, next) {
+  try {
+     let { category } = req.query;
+    let all;
+    if (!category) {
+      all = await productsManager.readAll();
+    } else {
+      all = await productsManager.readAll(category);
+    }
+    if (all.length > 0) {
+      return res.render("products" , {data: all})
+    } else {
+      const error = new Error("NOT FOUND PRODUCTS");
+      error.statusCode = 404;
+      throw error;
+  } catch (error) {
+      return next(error)
+  }
+  
+}
+
 export {
   getAllProducts,
   getProduct,
