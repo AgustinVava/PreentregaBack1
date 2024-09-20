@@ -9,12 +9,12 @@ const viewRouter = Router()
 viewRouter.use("/products", productsViewRouter);
 viewRouter.use("/carts", cartsViewRouter);
 viewRouter.use("/users", usersViewRouter);
-viewRouter.get("/" , (req, res, next)=> {
-    try {
-        return res.render("index")
-    } catch (error) {
-        return next(error)
-    }
+viewRouter.get("/", (req, res, next)=> {
+  try {
+    return res.render("index")
+  } catch (error) {
+    return next(error)
+  }
 })
 
 export default viewRouter

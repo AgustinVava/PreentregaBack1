@@ -7,6 +7,8 @@ class UsersManager {
     this.exists();
   }
   exists() {
+    // 0. apenas se crea la instancia se tiene que verificar si existe o no existe el archivo
+    // si no existe, hay que crearlo con un array vacío
     const exist = fs.existsSync(this.path);
     if (!exist) {
       fs.writeFileSync(this.path, JSON.stringify([]));
@@ -15,14 +17,14 @@ class UsersManager {
       console.log("file already exists");
     }
   }
-  async readAll(rol) {
+  async readAll(category) {
     try {
       const data = await fs.promises.readFile(this.path, "utf-8");
       const parseData = JSON.parse(data);
-      
-      if (rol) {
+      //console.log(parseData);
+      if (category) {
         const filteredData = parseData.filter(
-          (each) => each.rol === rol
+          (each) => each.category === category
         );
         return filteredData;
       } else {
@@ -37,6 +39,7 @@ class UsersManager {
     try {
       const all = await this.readAll();
       const one = all.find((each) => each.id === id);
+      //console.log(one);
       return one;
     } catch (error) {
       console.log(error);
@@ -57,44 +60,35 @@ class UsersManager {
     }
   }
 
-
   async update(id, newData) {
     try {
-      
-      const allUsers = await this.readAll();
-  
-      
-      const index = allUsers.findIndex((user) => user.id === id);
-  
+      const all = await this.readAll();
+      const index = all.findIndex((product) => product.id === id);
       if (index === -1) {
-        throw new Error(`User with id ${id} not found`);
+        return null;
       }
-  
-      
-      allUsers[index] = { ...allUsers[index], ...newData };
-  
-     
-      const updatedData = JSON.stringify(allUsers, null, 2);
-      await fs.promises.writeFile(this.path, updatedData);
-  
-      return allUsers[index]; 
+      // Actualizamos el producto
+      all[index] = { ...all[index], ...newData };
+      const stringAll = JSON.stringify(all, null, 2);
+      await fs.promises.writeFile(this.path, stringAll);
+      return all[index];
     } catch (error) {
       console.log(error);
       throw error;
     }
   }
 
-
+  // Método para eliminar un producto
   async delete(id) {
     try {
       const all = await this.readAll();
-      const filteredUsers = all.filter((user) => user.id !== id);
-      if (all.length === filteredUsers.length) {
+      const filtered = all.filter((product) => product.id !== id);
+      if (all.length === filtered.length) {
         return null
       }
-      const stringAll = JSON.stringify(filteredUsers, null, 2);
+      const stringAll = JSON.stringify(filtered, null, 2);
       await fs.promises.writeFile(this.path, stringAll);
-      return "user deleted";
+      return `User with id ${id} deleted`;
     } catch (error) {
       console.log(error);
       throw error;
