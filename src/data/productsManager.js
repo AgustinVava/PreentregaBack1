@@ -21,7 +21,6 @@ class ProductsManager {
     try {
       const data = await fs.promises.readFile(this.path, "utf-8");
       const parseData = JSON.parse(data);
-      //console.log(parseData);
       if (category) {
         const filteredData = parseData.filter(
           (each) => each.category === category
@@ -39,7 +38,6 @@ class ProductsManager {
     try {
       const all = await this.readAll();
       const one = all.find((each) => each.id === id);
-      //console.log(one);
       return one;
     } catch (error) {
       console.log(error);

@@ -1,45 +1,5 @@
 [
   {
-    "title": "prod",
-    "price": 100,
-    "id": "f2c7b02a2da230f5962293b3"
-  },
-  {
-    "title": "prod",
-    "price": 100,
-    "id": "5eeeea40b951ff85c843288c"
-  },
-  {
-    "title": "prod",
-    "price": 100,
-    "id": "f0c4f01e6e0dd58779ad7502"
-  },
-  {
-    "title": "prod",
-    "price": 100,
-    "id": "8b21d28d92b20a2ca6bcad41"
-  },
-  {
-    "title": "prod",
-    "price": 100,
-    "id": "91f14c2de7024ae14880b662"
-  },
-  {
-    "title": "prod",
-    "price": 100,
-    "id": "d5aaa3e065a0396b3d738935"
-  },
-  {
-    "title": "prod",
-    "price": 100,
-    "id": "6fff6208a23a5a766eab5112"
-  },
-  {
-    "title": "prod",
-    "price": 100,
-    "id": "a8a9b0b5507c8bc56043b369"
-  },
-  {
     "title": "t-shirt",
     "price": "10",
     "quantity": "2000",

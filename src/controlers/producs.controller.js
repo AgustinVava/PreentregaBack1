@@ -12,7 +12,7 @@ async function getAllProducts(req, res, next) {
     if (response.length > 0) {
       return res.status(200).json({ message: "PRODUCTS READ", response });
     } else {
-      const error = new Error("NOT FOUND PRODUCTS");
+      const error = new Error("PRODUCTS NOT FOUND");
       error.statusCode = 404;
       throw error;
     }
@@ -30,7 +30,7 @@ async function getProduct(req, res, next) {
     if (response) {
       return res.status(200).json({ message: "PRODUCT READ", response });
     } else {
-      const error = new Error("NOT FOUND PRODUCT");
+      const error = new Error("PRODUCT NOT FOUND");
       error.statusCode = 404;
       throw error;
     }
@@ -56,7 +56,7 @@ async function createGet(req, res, next) {
       category,
       supplier,
     });
-    return res.status(201).json({ message: "PRODUCT CREATED", response });
+    return res.status(201).json({ message: "PRODUCT CREATED SUCCESSFULLY", response });
   } catch (error) {
     return next(error);
   }
@@ -69,7 +69,7 @@ async function createProduct(req, res, next) {
     const responseManager = await productsManager.create(data);
     return res
       .status(201)
-      .json({ message: "PRODUCT CREATED", response: responseManager });
+      .json({ message: "PRODUCT CREATED SUCCESSFULLY", response: responseManager });
   } catch (error) {
     return next(error);
   }

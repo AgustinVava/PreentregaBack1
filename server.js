@@ -9,7 +9,7 @@ import __dirname from "./utils.js";
 
 try {
   const server = express();
-  const port = 8000;
+  const port = 8080;
   const ready = () => console.log("server ready on port " + port);
   server.listen(port, ready);
 
