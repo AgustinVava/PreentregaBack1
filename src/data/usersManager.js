@@ -7,21 +7,18 @@ class UsersManager {
     this.exists();
   }
   exists() {
-    // 0. apenas se crea la instancia se tiene que verificar si existe o no existe el archivo
-    // si no existe, hay que crearlo con un array vacío
     const exist = fs.existsSync(this.path);
     if (!exist) {
       fs.writeFileSync(this.path, JSON.stringify([]));
-      console.log("file created");
+      console.log("File has been created");
     } else {
-      console.log("file already exists");
+      console.log("The file already exists");
     }
   }
   async readAll(category) {
     try {
       const data = await fs.promises.readFile(this.path, "utf-8");
       const parseData = JSON.parse(data);
-      //console.log(parseData);
       if (category) {
         const filteredData = parseData.filter(
           (each) => each.category === category
@@ -39,7 +36,6 @@ class UsersManager {
     try {
       const all = await this.readAll();
       const one = all.find((each) => each.id === id);
-      //console.log(one);
       return one;
     } catch (error) {
       console.log(error);
@@ -67,7 +63,6 @@ class UsersManager {
       if (index === -1) {
         return null;
       }
-      // Actualizamos el producto
       all[index] = { ...all[index], ...newData };
       const stringAll = JSON.stringify(all, null, 2);
       await fs.promises.writeFile(this.path, stringAll);
@@ -78,7 +73,6 @@ class UsersManager {
     }
   }
 
-  // Método para eliminar un producto
   async delete(id) {
     try {
       const all = await this.readAll();

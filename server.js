@@ -23,7 +23,6 @@ try {
   server.set("view engine", "handlebars");
   server.set("views", __dirname + "/src/views");
 
-  //obligo a mi servidor a usar las rutas del enrutador
   server.use(router);
   server.use(errorHandler);
   server.use(pathHandler);

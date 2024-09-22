@@ -7,10 +7,8 @@ class ProductsManager {
     this.exists();
   }
   exists() {
-    // 0. apenas se crea la instancia se tiene que verificar si existe o no existe el archivo
-    // si no existe, hay que crearlo con un array vacío
-    const exist = fs.existsSync(this.path);
-    if (!exist) {
+    const exists = fs.existsSync(this.path);
+    if (!exists) {
       fs.writeFileSync(this.path, JSON.stringify([]));
       console.log("file created");
     } else {
@@ -65,7 +63,6 @@ class ProductsManager {
       if (index === -1) {
         return null;
       }
-      // Actualizamos el producto
       all[index] = { ...all[index], ...newData };
       const stringAll = JSON.stringify(all, null, 2);
       await fs.promises.writeFile(this.path, stringAll);
@@ -76,7 +73,6 @@ class ProductsManager {
     }
   }
 
-  // Método para eliminar un producto
   async delete(id) {
     try {
       const all = await this.readAll();
