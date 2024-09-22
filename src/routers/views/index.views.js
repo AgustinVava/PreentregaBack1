@@ -1,7 +1,7 @@
 import { Router } from "express";
-import productsViewRouter from "./products.view.js";
-import cartsViewRouter from "./carts.view.js";
-import usersViewRouter from "./users.view.js";
+import productsViewRouter from "./products.views.js";
+import cartsViewRouter from "./carts.views.js";
+import usersViewRouter from "./users.views.js";
 
 const viewRouter = Router()
 
@@ -17,4 +17,4 @@ viewRouter.get("/", (req, res, next)=> {
   }
 })
 
-export default viewRouter
+export default viewRouter;
