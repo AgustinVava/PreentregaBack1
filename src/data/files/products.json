@@ -22,5 +22,93 @@
     "stock": 70,
     "locked": "Bloqueado",
     "id": "ff694d85f4487e41302ce0b9"
+  },
+  {
+    "title": "Samsung Galaxy S8",
+    "price": 65,
+    "supplier": "Samsung",
+    "stock": 20,
+    "locked": "Desbloqueado",
+    "id": "424e440d7909b958cd6d6dea"
+  },
+  {
+    "title": "Samsung Galaxy Z Fold",
+    "price": 637,
+    "supplier": "Samsung",
+    "stock": 8,
+    "locked": "Desbloqueado",
+    "id": "c22d703170dd97287987f8cd"
+  },
+  {
+    "title": "iPhone 16 Pro Max",
+    "price": 1200,
+    "supplier": "Apple",
+    "stock": 50,
+    "locked": "Desbloqueado",
+    "id": "1ae2c8d8933292607ae93fd1"
+  },
+  {
+    "title": "iPhone 15 Pro Max",
+    "price": 728,
+    "supplier": "Apple",
+    "stock": 90,
+    "locked": "Bloqueado",
+    "id": "a5f8ef205e6caa1bd87ebee4"
+  },
+  {
+    "title": "Apple iPhone 14 Pro Max",
+    "price": 518,
+    "supplier": "Apple",
+    "stock": 4,
+    "locked": "Desbloqueado",
+    "id": "ec33b82ce95c36caf75e37f3"
+  },
+  {
+    "title": "Apple iPhone 13 Mini",
+    "price": 280,
+    "supplier": "Apple",
+    "stock": 10,
+    "locked": "Desbloqueado",
+    "id": "0c4a9a6b7b51ce90dd172820"
+  },
+  {
+    "title": "Google Pixel 8 Pro",
+    "price": 410,
+    "supplier": "Google",
+    "stock": 100,
+    "locked": "Desbloqueado",
+    "id": "0b6b67ad60d3c1559cd8396f"
+  },
+  {
+    "title": "Google Pixel 9",
+    "price": 536,
+    "supplier": "Google",
+    "stock": 500,
+    "locked": "Desbloqueado",
+    "id": "1bc5665a13ff3fd41a903af7"
+  },
+  {
+    "title": "Google Pixel 9 Pro",
+    "price": 710,
+    "supplier": "Google",
+    "stock": 400,
+    "locked": "Bloqueado",
+    "id": "7af451293f83fef54b93ce24"
+  },
+  {
+    "title": "OnePlus Open",
+    "price": 823,
+    "supplier": "OnePlus",
+    "stock": 700,
+    "locked": "Desbloqueado",
+    "id": "48cd38159c984416645a52f3"
+  },
+  {
+    "title": "OnePlus 12",
+    "price": 597,
+    "supplier": "OnePlus",
+    "stock": 70,
+    "locked": "Bloqueado",
+    "id": "9535e8aa76ec7a174b9953c3"
   }
 ]
