@@ -59,24 +59,6 @@ async function createUser(req, res, next) {
   }
 }
 
-// async function updateUser(req, res, next) {
-//   try {
-//     const { uid } = req.params;
-//     const newData = req.body;
-//     const responseManager = await usersManager.update(uid, newData);
-//     if (!responseManager) {
-//       const error = new Error(`User with id ${uid} not found`);
-//       error.statusCode = 404;
-//       throw error;
-//     }
-//     return res
-//       .status(200)
-//       .json({ message: "USER UPDATED", response: responseManager });
-//   } catch (error) {
-//     return next(error);
-//   }
-// }
-
 async function updateUser(req, res, next) {
   try {
     const { uid } = req.params;
@@ -90,8 +72,8 @@ async function updateUser(req, res, next) {
     if (error.message.includes('not found')) {
       return res.status(404).json({ message: error.message });
     }
-    return next(error); // Si es otro error, pasa al siguiente middleware
-  }
+    return next(error); 
+}
 }
 
 
@@ -100,7 +82,7 @@ async function destroyUser(req, res, next) {
     const { uid } = req.params;
     const responseManager = await usersManager.delete(uid);
     if (!responseManager) {
-      const error = new Error(`User with id ${uid} not found`);
+      const error = new Error(`User id ${uid} is not found`);
       error.statusCode = 404;
       throw error;
     }
