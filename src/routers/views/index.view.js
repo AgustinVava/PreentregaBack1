@@ -1,11 +1,10 @@
 import { Router } from "express";
-import productsViewRouter from "./products.view.js";
-import cartsViewRouter from "./carts.view.js";
-import usersViewRouter from "./users.view.js";
+import productsViewRouter from "./products.views.js";
+import cartsViewRouter from "./carts.views.js";
+import usersViewRouter from "./users.views.js";
 
 const viewRouter = Router()
 
-//el enrutador de vistas tiene que llamar a los enrutadores de los recursos
 viewRouter.use("/products", productsViewRouter);
 viewRouter.use("/carts", cartsViewRouter);
 viewRouter.use("/users", usersViewRouter);
@@ -17,4 +16,4 @@ viewRouter.get("/", (req, res, next)=> {
   }
 })
 
-export default viewRouter
+export default viewRouter;

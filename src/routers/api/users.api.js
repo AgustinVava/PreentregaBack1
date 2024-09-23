@@ -6,7 +6,7 @@ import {
   createUser,
   updateUser,
   destroyUser,
-} from "../../controllers/users.controllers.js";
+} from "../../../src/controllers/users.controllers.js";
 
 const usersApiRouter = Router();
 
