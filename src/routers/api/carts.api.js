@@ -20,5 +20,5 @@ router.post('/:userId/remove/:productId', async (req, res) => {
     res.json(updatedCart);
 });
 
-export default router;  
+export default cartsApiRouter;  
 
