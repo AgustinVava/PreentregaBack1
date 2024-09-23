@@ -1,4 +1,4 @@
-import usersManager from "../data/productsManager.js";
+import usersManager from "../data/products.manager.js";
 
 async function getAllUsers(req, res, next) {
   try {
