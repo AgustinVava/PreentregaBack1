@@ -5,7 +5,6 @@ import usersViewRouter from "./users.views.js";
 
 const viewRouter = Router()
 
-//el enrutador de vistas tiene que llamar a los enrutadores de los recursos
 viewRouter.use("/products", productsViewRouter);
 viewRouter.use("/carts", cartsViewRouter);
 viewRouter.use("/users", usersViewRouter);
