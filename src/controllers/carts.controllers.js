@@ -1,15 +1,9 @@
-class CartService {
+class cartsController {
     constructor() {
-        // Simulación de base de datos en memoria para los carritos
         this.carts = {};
     }
 
-    async getCartByUserId(userId) {
-        // Obtener el carrito de un usuario por su ID
-        return this.carts[userId] || { items: [], totalPrice: 0 };
-    }
-
-    async addProductToCart(userId, productId, quantity, price) {
+    async getCartByUserId(userId, productId, quantity, price) {
         // Agregar un producto al carrito de un usuario
         if (!this.carts[userId]) {
             this.carts[userId] = { items: [], totalPrice: 0 };
@@ -41,4 +35,4 @@ class CartService {
     }
 }
 
-export default new CartService();
+export default cartsController();
