@@ -6,6 +6,7 @@ import router from "./src/routers/index.router.js";
 import errorHandler from "./src/middlewares/errorHandler.mid.js";
 import pathHandler from "./src/middlewares/pathHandler.mid.js";
 import __dirname from "./utils.js";
+import cartRoutes from "./src/routers/api/carts.api.js";
 
 try {
   const server = express();
