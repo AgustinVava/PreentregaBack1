@@ -1,4 +1,4 @@
-import usersManager from "../data/products.manager.js";
+import usersManager from "../../src/data/users.manager.js";
 
 async function getAllUsers(req, res, next) {
   try {
@@ -40,7 +40,7 @@ async function getUser(req, res, next) {
 async function createUser(req, res, next) {
   try {
     const { email, password } = req.body;
-    let { userName, rol } = req.body;
+    let { userName, rol, photo } = req.body;
     if (!rol) {
       rol = 0;
     }
@@ -53,7 +53,7 @@ async function createUser(req, res, next) {
     });
     return res
       .status(201)
-      .json({ message: "USER CREATED", response: responseManager });
+      .json({ message: "USER CREATED SUCCESSFULLY", response: responseManager });
   } catch (error) {
     return next(error);
   }
