@@ -3,7 +3,7 @@
 ## Bienvenidos a nuestra primera pre-entrega de Backend 🚀
 En esta ocasión hemos desarrollado un e-commerce para celulares de toda gama o marca; para que puedas conseguir siempre tu telefono deseado.
 
-La forma de uso de este proyecto es yendo a la rama llamada challenge1 en donde podras crear tu usuario, ver los productos e incluso filtrarlos por id.
+La forma de uso de este proyecto es yendo a la rama llamada challenge1 en donde podras crear tu usuario, ver los productos e incluso filtrarlos por id a través de Postman.
 
 Por aca algunos ejemplos:
 
