@@ -1,4 +1,4 @@
-import usersManager from "../data/products.manager.js";
+import usersManager from "../../src/data/users.manager.js";
 
 async function getAllUsers(req, res, next) {
   try {
@@ -40,7 +40,7 @@ async function getUser(req, res, next) {
 async function createUser(req, res, next) {
   try {
     const { email, password } = req.body;
-    let { userName, rol } = req.body;
+    let { userName, rol, photo } = req.body;
     if (!rol) {
       rol = 0;
     }
@@ -53,29 +53,11 @@ async function createUser(req, res, next) {
     });
     return res
       .status(201)
-      .json({ message: "USER CREATED", response: responseManager });
+      .json({ message: "USER CREATED SUCCESSFULLY", response: responseManager });
   } catch (error) {
     return next(error);
   }
 }
-
-// async function updateUser(req, res, next) {
-//   try {
-//     const { uid } = req.params;
-//     const newData = req.body;
-//     const responseManager = await usersManager.update(uid, newData);
-//     if (!responseManager) {
-//       const error = new Error(`User with id ${uid} not found`);
-//       error.statusCode = 404;
-//       throw error;
-//     }
-//     return res
-//       .status(200)
-//       .json({ message: "USER UPDATED", response: responseManager });
-//   } catch (error) {
-//     return next(error);
-//   }
-// }
 
 async function updateUser(req, res, next) {
   try {
@@ -90,8 +72,8 @@ async function updateUser(req, res, next) {
     if (error.message.includes('not found')) {
       return res.status(404).json({ message: error.message });
     }
-    return next(error); // Si es otro error, pasa al siguiente middleware
-  }
+    return next(error); 
+}
 }
 
 
@@ -100,7 +82,7 @@ async function destroyUser(req, res, next) {
     const { uid } = req.params;
     const responseManager = await usersManager.delete(uid);
     if (!responseManager) {
-      const error = new Error(`User with id ${uid} not found`);
+      const error = new Error(`User id ${uid} is not found`);
       error.statusCode = 404;
       throw error;
     }

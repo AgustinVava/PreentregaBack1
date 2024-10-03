@@ -1,4 +1,4 @@
-import productsManager from "../../src/data/productsManager.js";
+import productsManager from "../../src/data/products.manager.js";
 
 async function getAllProducts(req, res, next) {
   try {
@@ -40,7 +40,7 @@ async function getProduct(req, res, next) {
 async function createGet(req, res, next) {
   try {
     const { title, price, quantity } = req.params;
-    let { category, supplier } = req.query;
+    let { category, supplier, locked } = req.query;
     if (!category) {
       category = "none";
     }

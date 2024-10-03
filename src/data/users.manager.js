@@ -82,7 +82,7 @@ class UsersManager {
       }
       const stringAll = JSON.stringify(filtered, null, 2);
       await fs.promises.writeFile(this.path, stringAll);
-      return `User with id ${id} deleted`;
+      return `User with id ${id} has been deleted`;
     } catch (error) {
       console.log(error);
       throw error;

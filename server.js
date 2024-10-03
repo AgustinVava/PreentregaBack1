@@ -30,4 +30,3 @@ try {
 } catch (error) {
   console.log(error);
 }
-  server.use('/api/cart', cartRoutes);
