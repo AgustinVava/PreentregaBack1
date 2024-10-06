@@ -3,112 +3,230 @@
     "title": "Samsung Galaxy S24 Ultra",
     "price": 721,
     "supplier": "Samsung",
+    "category": "Telefonos",
     "stock": 40,
     "locked": "Desbloqueado",
+    "photo": "https://www.visible.com/shop/assets/images/shop/webp/GalaxyS22Ultra-PhantomBlack-Lockup.webp",
     "id": "b609a8f940c988d2acebff15"
   },
   {
     "title": "Samsung Galaxy S22 Ultra",
     "price": 314,
     "supplier": "Samsung",
+    "category": "Telefonos",
     "stock": 10,
     "locked": "Bloqueado",
+    "photo": "https://imgs.search.brave.com/ZRXypSChU9yzoMv-0Bz3Jd9AiqwletIr08sQaLmMCz0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzYxWWw3elpWWVNM/LmpwZw",
     "id": "8e5b0f91827de06d0f294689"
   },
   {
     "title": "Samsung Galaxy S21 Ultra 5G",
     "price": 235,
     "supplier": "Samsung",
+    "category": "Telefonos",
     "stock": 70,
     "locked": "Bloqueado",
+    "photo": "https://imgs.search.brave.com/GoQQbYy8v_sy_sR6KPqR8kcZN4FzmDGd4iYIqCztDKE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzYxRlBzUFF6aEJM/LmpwZw",
     "id": "ff694d85f4487e41302ce0b9"
   },
   {
     "title": "Samsung Galaxy S8",
     "price": 65,
     "supplier": "Samsung",
+    "category": "Telefonos",
     "stock": 20,
     "locked": "Desbloqueado",
+    "photo": "https://imgs.search.brave.com/mCTKDjRTyvT0EPqgjoxhZIRwmuX7ZF8FV_VHeVvJzNk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmdh/ZGdldHMzNjBjZG4u/Y29tL2xhcmdlL3Nh/bXN1bmdfZ2FsYXh5/X3M4XzE0OTA4NzE5/NDYwOTcuanBn",
     "id": "424e440d7909b958cd6d6dea"
   },
   {
     "title": "Samsung Galaxy Z Fold",
     "price": 637,
     "supplier": "Samsung",
+    "category": "Telefonos",
     "stock": 8,
     "locked": "Desbloqueado",
+    "photo": "https://imgs.search.brave.com/ZZuvCcUNixoPgNUoyCsrkQtt6pYPWw9Tu88E3cerapA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFhUjBvdmc2MUwu/anBn",
     "id": "c22d703170dd97287987f8cd"
   },
   {
-    "title": "iPhone 16 Pro Max",
+    "title": "Apple iPhone 16 Pro Max",
     "price": 1200,
     "supplier": "Apple",
+    "category": "Telefonos",
     "stock": 50,
     "locked": "Desbloqueado",
+    "photo": "https://m.media-amazon.com/images/I/61xJlx-3KDL._AC_SX466_.jpg",
     "id": "1ae2c8d8933292607ae93fd1"
   },
   {
-    "title": "iPhone 15 Pro Max",
+    "title": "Apple iPhone 15 Pro Max",
     "price": 728,
     "supplier": "Apple",
+    "category": "Telefonos",
     "stock": 90,
     "locked": "Bloqueado",
+    "photo": "https://imgs.search.brave.com/FhXAxEdNwftSS-rWH4ySFsj9XgliVoMEL9yH0_QjqAM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzMxUCtSSW13bmxM/LmpwZw",
     "id": "a5f8ef205e6caa1bd87ebee4"
   },
   {
     "title": "Apple iPhone 14 Pro Max",
     "price": 518,
     "supplier": "Apple",
+    "category": "Telefonos",
     "stock": 4,
     "locked": "Desbloqueado",
+    "photo": "https://www.visible.com/shop/assets/images/shop/webp/iPhone_14_Pro_Max_SIL_1.webp",
     "id": "ec33b82ce95c36caf75e37f3"
   },
   {
     "title": "Apple iPhone 13 Mini",
     "price": 280,
     "supplier": "Apple",
+    "category": "Telefonos",
     "stock": 10,
     "locked": "Desbloqueado",
+    "photo": "https://www.visible.com/shop/assets/images/shop/webp/iPhone_13_mini_PIN_1.webp",
     "id": "0c4a9a6b7b51ce90dd172820"
   },
   {
     "title": "Google Pixel 8 Pro",
     "price": 410,
     "supplier": "Google",
+    "category": "Telefonos",
     "stock": 100,
     "locked": "Desbloqueado",
+    "photo": "https://www.att.com/scmsassets/global/devices/phones/google/google-pixel-8-pro/carousel/obsidian-1.png",
     "id": "0b6b67ad60d3c1559cd8396f"
   },
   {
     "title": "Google Pixel 9",
     "price": 536,
     "supplier": "Google",
+    "category": "Telefonos",
     "stock": 500,
     "locked": "Desbloqueado",
+    "photo": "https://www.visible.com/shop/assets/images/shop/webp/Pixel9-Obsidian-Front.webp",
     "id": "1bc5665a13ff3fd41a903af7"
   },
   {
     "title": "Google Pixel 9 Pro",
     "price": 710,
     "supplier": "Google",
+    "category": "Telefonos",
     "stock": 400,
     "locked": "Bloqueado",
+    "photo": "https://www.visible.com/shop/assets/images/shop/webp/Pixel9Pro-Obsidian-Front.webp",
     "id": "7af451293f83fef54b93ce24"
   },
   {
     "title": "OnePlus Open",
     "price": 823,
     "supplier": "OnePlus",
+    "category": "Telefonos",
     "stock": 700,
     "locked": "Desbloqueado",
+    "photo": "https://image01.oneplus.net/media/202408/02/1732d1e86f58ae2fc4b0398314222da3.png?x-amz-process=image/format,webp/quality,Q_80",
     "id": "48cd38159c984416645a52f3"
   },
   {
     "title": "OnePlus 12",
     "price": 597,
     "supplier": "OnePlus",
+    "category": "Telefonos",
     "stock": 70,
     "locked": "Bloqueado",
+    "photo": "https://image01.oneplus.net/media/202405/28/e2566b9853071dbb7fe9306713bbe51f.png?x-amz-process=image/format,webp/quality,Q_80",
     "id": "9535e8aa76ec7a174b9953c3"
+  },
+  {
+    "title": "Apple Watch Ultra 2",
+    "price": 799,
+    "supplier": "Apple",
+    "category": "Relojes",
+    "stock": 200,
+    "photo": "https://www.visible.com/shop/assets/images/shop/webp/Apple_Watch_Ultra_2_LTE_49mm_Natural_Titanium_Navy_Ocean_Band_1.webp",
+    "id": "dcbaeed2e3fe6148e11b0376"
+  },
+  {
+    "title": "Apple Watch Series 10",
+    "price": 499,
+    "supplier": "Apple",
+    "category": "Relojes",
+    "stock": 87,
+    "photo": "https://www.visible.com/shop/assets/images/shop/webp/Apple_Watch_Series_10_LTE_42mm_Jet_Black_Aluminum_Ink_Sport_Loop_1.webp",
+    "id": "8ff4030a831aede00246634c"
+  },
+  {
+    "title": "OtterBox - Defender Series Pro XT Hard Shell for Samsung Galaxy S24 - Dark Side",
+    "price": 28,
+    "supplier": "Otterbox",
+    "category": "Accesorios",
+    "stock": 1000,
+    "photo": "https://imgs.search.brave.com/zk-4uKQrV9ZurY2pLrRGivmN9_1v_JuLN0kPYur_iyw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzcxTy0wZ0lYWm5M/LmpwZw",
+    "id": "2674300e4d40c65810f62060"
+  },
+  {
+    "title": "AirPods Max",
+    "price": 237,
+    "supplier": "Apple",
+    "category": "Auriculares",
+    "stock": 50,
+    "photo": "https://static.swappa.com/images/cache/12/7d/127d88c85f458216e3fcaffccca549c5.png",
+    "id": "d2e3f7fdf204da425ea9c672"
+  },
+  {
+    "title": "Samsung Galaxy Buds2 Pro",
+    "price": 74,
+    "supplier": "Samsung",
+    "category": "Auriculares",
+    "stock": 150,
+    "photo": "https://static.swappa.com/images/cache/22/07/22072407e7612ccf081e8654ea8354c7.png",
+    "id": "017de6605ec52e8853ab04b2"
+  },
+  {
+    "title": "Beats Studio Buds",
+    "price": 55,
+    "supplier": "Beats",
+    "category": "Auriculares",
+    "stock": 200,
+    "photo": "https://static.swappa.com/images/cache/d5/d5/d5d5648f8e51922f64b263946e6442a2.png",
+    "id": "6d73acd524ed815482f95c7e"
+  },
+  {
+    "title": "iPhone 13",
+    "price": 288,
+    "supplier": "Apple",
+    "category": "Telefonos",
+    "stock": 700,
+    "photo": "https://imgs.search.brave.com/wmyg9qojZx-fdH-9LpBykV_fpjMc0EgWn4-eI6SvLoM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXR0LmNvbS9zY21z/YXNzZXRzL2dsb2Jh/bC9kZXZpY2VzL3Bo/b25lcy9hcHBsZS9h/cHBsZS1pcGhvbmUt/MTMvY2Fyb3VzZWwv/bWlkbmlnaHQvNjE2/MkQtMS5wbmc",
+    "id": "611a4adb76bb6afd2775f810"
+  },
+  {
+    "title": "iPhone SE 3rd Gen 2022",
+    "price": 134,
+    "supplier": "Apple",
+    "category": "Telefonos",
+    "stock": 56,
+    "photo": "https://imgs.search.brave.com/yQSQhiKfvLTzjbNh0qTq4xuUNTqf95_rRQj-_77U5q8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/MzF5QXRHanJySkwu/anBn",
+    "id": "3f1c58e0b9509d477a62df04"
+  },
+  {
+    "title": "Samsung Galaxy Watch Ultra",
+    "price": 324,
+    "supplier": "Samsung",
+    "category": "Relojes",
+    "stock": 8,
+    "photo": "https://imgs.search.brave.com/Rr6HRf01Rs8f25W8cT5S-9PbpAJPx00f3M5LkYzzBhI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L0ty/ZmJTM1JIc3IzUjJi/eDhyYlFkZlctMzIw/LTgwLmpwZw",
+    "id": "23a5097f2bb7327f706d45b8"
+  },
+  {
+    "title": "Apple iPad 9th Gen",
+    "price": 179,
+    "supplier": "Apple",
+    "category": "Tablets",
+    "stock": 500,
+    "photo": "https://imgs.search.brave.com/-QcGdnteMI_lABWW32Y2P7GFmoMh8hI0bViOp-41lcU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFOR25wam9SREwu/anBn",
+    "id": "a0f03b74428d70754364793a"
   }
 ]
