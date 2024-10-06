@@ -1,14 +1,104 @@
 <h2>PRODUCTS</h2>
+
+<!-- Filtro por categoría -->
+<form id="categoryFilterForm" class="mb-3">
+    <select name="category" class="form-select" onchange="filterByCategory(this.value)">
+        <option value="">Seleccionar categoría</option>
+        <option value="categoria1">Categoría 1</option>
+        <option value="categoria2">Categoría 2</option>
+        <!-- Agrega más categorías según tus necesidades -->
+    </select>
+</form>
+
 <section class="d-flex flex-wrap justify-content-evenly">
   {{#each products}}
-  {{!-- con each itero la variable products --}}
-  {{!-- revisar en el controller COMO SE LLAMA VARIABLE --}}
-   <div class="card my-2" style="width: 18rem;">
+  <div class="card my-2" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">{{this.title}}</h5>
       <p class="card-text">{{this.category}}</p>
       <a href="/products/{{this.id}}" class="btn btn-success">+info</a>
+      <button onclick="updateProduct('{{this.id}}')" class="btn btn-warning">Actualizar</button>
+      <button onclick="deleteProduct('{{this.id}}')" class="btn btn-danger">Eliminar</button>
     </div>
   </div>
   {{/each}}
 </section>
+
+<h2>Agregar Producto</h2>
+<form id="addProductForm">
+  <input type="text" name="title" placeholder="Título" required>
+  <input type="number" name="price" placeholder="Precio" required>
+  <input type="number" name="quantity" placeholder="Cantidad" required>
+  <input type="text" name="category" placeholder="Categoría">
+  <input type="text" name="supplier" placeholder="Proveedor">
+  <button type="submit">Agregar Producto</button>
+</form>
+
+<script>
+  document.getElementById('addProductForm').onsubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    const response = await fetch('/products', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    if (response.ok) {
+      location.reload(); // Recargar la página para ver el nuevo producto
+    }
+  };
+
+  async function deleteProduct(pid) {
+    const response = await fetch(`/products/${pid}`, {
+      method: 'DELETE',
+    });
+    if (response.ok) {
+      location.reload(); // Recargar la página para ver los cambios
+    }
+  }
+
+  async function updateProduct(pid) {
+    const newData = prompt("Ingrese los nuevos datos en formato JSON (ejemplo: {title: 'Nuevo título', price: 100}):");
+    if (newData) {
+      try {
+        const parsedData = JSON.parse(newData);
+        const response = await fetch(`/products/${pid}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(parsedData),
+        });
+        if (response.ok) {
+          location.reload(); // Recargar la página para ver los cambios
+        }
+      } catch (error) {
+        alert("Formato JSON inválido. Por favor, inténtalo de nuevo.");
+      }
+    }
+  }
+
+  async function filterByCategory(category) {
+    const response = await fetch(`/products?category=${category}`);
+    const products = await response.json();
+    renderProducts(products);
+  }
+
+  function renderProducts(products) {
+    const productContainer = document.querySelector('section.d-flex');
+    productContainer.innerHTML = ''; // Limpiar productos actuales
+    products.forEach(product => {
+      productContainer.innerHTML += `
+        <div class="card my-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">${product.title}</h5>
+            <p class="card-text">${product.category}</p>
+            <a href="/products/${product.id}" class="btn btn-success">+info</a>
+            <button onclick="updateProduct('${product.id}')" class="btn btn-warning">Actualizar</button>
+            <button onclick="deleteProduct('${product.id}')" class="btn btn-danger">Eliminar</button>
+          </div>
+        </div>
+      `;
+    });
+  }
+</script>

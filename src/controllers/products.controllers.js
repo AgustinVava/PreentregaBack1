@@ -2,12 +2,12 @@ import productsManager from "../../src/data/products.manager.js";
 
 async function getAllProducts(req, res, next) {
   try {
-    let { category } = req.query;
+    let { category } = req.query; // Extraemos la categoría de la query
     let response;
     if (!category) {
-      response = await productsManager.readAll();
+      response = await productsManager.readAll(); // Obtiene todos los productos
     } else {
-      response = await productsManager.readAll(category);
+      response = await productsManager.readAll(category); // Filtra por categoría
     }
     if (response.length > 0) {
       return res.status(200).json({ message: "PRODUCTS READ", response });
@@ -20,6 +20,7 @@ async function getAllProducts(req, res, next) {
     return next(error);
   }
 }
+
 
 async function getProduct(req, res, next) {
   try {
@@ -108,27 +109,21 @@ async function destroyProduct(req, res, next) {
   }
 }
 
-async function showProducts (req, res, next) {
+async function showProducts(req, res, next) {
   try {
-    let { category } = req.query;
-    let all;
-    if (!category) {
-      all = await productsManager.readAll();
-    } else {
-      all = await productsManager.readAll(category);
-    }
+    let all = await productsManager.readAll(); // Obtener todos los productos
     if (all.length > 0) {
-      return res.render("products", { products: all })
+      return res.render("products", { products: all }); // Renderizar la vista con todos los productos
     } else {
       const error = new Error("NOT FOUND PRODUCTS");
       error.statusCode = 404;
       throw error;
     }
-
   } catch (error) {
-    return next(error)
+    return next(error);
   }
 }
+
 
 async function showOneProduct(req, res, next) {
   try {

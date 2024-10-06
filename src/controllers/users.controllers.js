@@ -39,11 +39,9 @@ async function getUser(req, res, next) {
 
 async function createUser(req, res, next) {
   try {
-    const { email, password } = req.body;
-    let { userName, rol, photo } = req.body;
-    if (!rol) {
-      rol = 0;
-    }
+    const { email, password, userName, photo } = req.body;
+    const rol = 0;  // Rol predeterminado para usuarios registrados
+
     const responseManager = await usersManager.create({
       email,
       password,
@@ -51,13 +49,13 @@ async function createUser(req, res, next) {
       rol,
       photo,
     });
-    return res
-      .status(201)
-      .json({ message: "USER CREATED SUCCESSFULLY", response: responseManager });
+
+    return res.redirect("/users");  // Redirigir a la lista de usuarios después de registrar
   } catch (error) {
     return next(error);
   }
 }
+
 
 async function updateUser(req, res, next) {
   try {
@@ -94,4 +92,56 @@ async function destroyUser(req, res, next) {
   }
 }
 
-export { getAllUsers, getUser, createUser, updateUser, destroyUser };
+async function getUserView(req, res, next) {
+  try {
+    const { uid } = req.params;
+    const user = await usersManager.read(uid);
+    if (user) {
+      return res.render("userDetail", { user });  // Renderiza la vista con los datos del usuario
+    } else {
+      const error = new Error("USER NOT FOUND");
+      error.statusCode = 404;
+      throw error;
+    }
+  } catch (error) {
+    return next(error);
+  }
+}
+
+// Controlador para mostrar el formulario de registro
+function getRegisterView(req, res, next) {
+  try {
+    return res.render("register");  // Renderiza la vista del formulario de registro
+  } catch (error) {
+    return next(error);
+  }
+}
+
+// Controlador para mostrar el formulario de inicio de sesión
+function getLoginView(req, res, next) {
+  try {
+    return res.render("login");  // Renderiza la vista del formulario de inicio de sesión
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function loginUser(req, res, next) {
+  try {
+    const { email, password } = req.body;
+    const user = await usersManager.readAll();  // Obtener todos los usuarios
+
+    const foundUser = user.find(u => u.email === email && u.password === password);
+    if (foundUser) {
+      // Aquí puedes implementar una lógica para manejar la sesión, como el uso de cookies o JWT
+      return res.redirect(`/users/${foundUser.id}`);  // Redirigir a la página del usuario
+    } else {
+      return res.status(401).send("Credenciales incorrectas");
+    }
+  } catch (error) {
+    return next(error);
+  }
+}
+
+
+export { getAllUsers, getUser, createUser, updateUser, destroyUser, getUserView, getRegisterView, getLoginView, loginUser };
