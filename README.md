@@ -23,7 +23,7 @@ Por aca algunos ejemplos:
 
 Por acá la parte visual:
 
-![Captura de pantalla 2024-10-04 193543](https://github.com/user-attachments/assets/38671b19-545c-4956-befc-245d19a7911f)
+![Captura de pantalla 2024-10-07 210922](https://github.com/user-attachments/assets/9586e5af-4ab1-49e7-ab48-35dfe0d22032)
 
 ![Captura de pantalla 2024-10-07 210858](https://github.com/user-attachments/assets/26937dd9-a2b4-4b6a-bdb8-5c223c479faa)
 
