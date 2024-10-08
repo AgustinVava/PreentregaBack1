@@ -21,5 +21,11 @@ Por aca algunos ejemplos:
 
 ![Captura de pantalla 2024-09-26 170611](https://github.com/user-attachments/assets/4ace1ec6-0752-44ba-a58f-fb4292d00ec5)
 
+Por acá la parte visual:
+
+![Captura de pantalla 2024-10-07 210858](https://github.com/user-attachments/assets/ef18a5fe-f7d3-45db-92bd-51d449200219)
+
+![Captura de pantalla 2024-10-04 193543](https://github.com/user-attachments/assets/54b99acd-38fd-49ab-992b-9e3b20414363)
+
 ## Construido con 🛠️
 NodeJS, ExpressJS, Nodemon, FileSystem, Postman.
