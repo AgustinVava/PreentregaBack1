@@ -6,5 +6,29 @@
     "rol": "Cliente",
     "photo": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "id": "87c6722143312054c39a91a6"
+  },
+  {
+    "email": "estabanRamirez65@Outlook.com",
+    "password": "Est3b4nR",
+    "userName": "EstebanR",
+    "rol": "Cliente",
+    "photo": "https://cdn.pixabay.com/photo/2023/11/03/09/08/ai-generated-8362459_640.png",
+    "id": "cbd1dd6fd7b687d812220589"
+  },
+  {
+    "email": "techguru21@gamil.com",
+    "password": "2121tech",
+    "userName": "techguru_21",
+    "rol": "Cliente",
+    "photo": "https://cdn.pixabay.com/photo/2024/05/14/11/38/tv-8760954_1280.png",
+    "id": "d784971ff79687ff40302eac"
+  },
+  {
+    "email": " johnny_coder@hotmail.com",
+    "password": "2121tech",
+    "userName": "johnny_coder",
+    "rol": "Cliente",
+    "photo": "https://pixabay.com/illustrations/ai-generated-wolf-mountain-wolf-8340660/",
+    "id": "5d7e07b8f484c29327b3f7e2"
   }
 ]
