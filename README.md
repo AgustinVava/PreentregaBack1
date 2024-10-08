@@ -23,9 +23,10 @@ Por aca algunos ejemplos:
 
 Por acá la parte visual:
 
-![Captura de pantalla 2024-10-07 210858](https://github.com/user-attachments/assets/ef18a5fe-f7d3-45db-92bd-51d449200219)
+![Captura de pantalla 2024-10-04 193543](https://github.com/user-attachments/assets/38671b19-545c-4956-befc-245d19a7911f)
 
-![Captura de pantalla 2024-10-04 193543](https://github.com/user-attachments/assets/54b99acd-38fd-49ab-992b-9e3b20414363)
+![Captura de pantalla 2024-10-07 210858](https://github.com/user-attachments/assets/26937dd9-a2b4-4b6a-bdb8-5c223c479faa)
+
 
 ## Construido con 🛠️
 NodeJS, ExpressJS, Nodemon, FileSystem, Postman.
