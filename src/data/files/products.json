@@ -199,6 +199,7 @@
     "supplier": "Apple",
     "category": "Telefonos",
     "stock": 700,
+    "locked": "Bloqueado",
     "photo": "https://imgs.search.brave.com/wmyg9qojZx-fdH-9LpBykV_fpjMc0EgWn4-eI6SvLoM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXR0LmNvbS9zY21z/YXNzZXRzL2dsb2Jh/bC9kZXZpY2VzL3Bo/b25lcy9hcHBsZS9h/cHBsZS1pcGhvbmUt/MTMvY2Fyb3VzZWwv/bWlkbmlnaHQvNjE2/MkQtMS5wbmc",
     "id": "611a4adb76bb6afd2775f810"
   },
@@ -208,6 +209,7 @@
     "supplier": "Apple",
     "category": "Telefonos",
     "stock": 56,
+    "locked": "Desbloqueado",
     "photo": "https://imgs.search.brave.com/yQSQhiKfvLTzjbNh0qTq4xuUNTqf95_rRQj-_77U5q8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/MzF5QXRHanJySkwu/anBn",
     "id": "3f1c58e0b9509d477a62df04"
   },
@@ -228,5 +230,155 @@
     "stock": 500,
     "photo": "https://imgs.search.brave.com/-QcGdnteMI_lABWW32Y2P7GFmoMh8hI0bViOp-41lcU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFOR25wam9SREwu/anBn",
     "id": "a0f03b74428d70754364793a"
+  },
+  {
+    "title": "Samsung Galaxy S10",
+    "price": 113,
+    "supplier": "Samsung",
+    "category": "Telefonos",
+    "stock": 66,
+    "locked": "Desbloqueado",
+    "photo": "https://imgs.search.brave.com/GE4b8JYkOsYH5HZ-_U1FjICN2G_Ouzbb4bEUcWY-ZLk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzUxLTFjTkNGS29M/LmpwZw",
+    "id": "3c1143680fd60627ac626669"
+  },
+  {
+    "title": "Google Pixel 4a 5G",
+    "price": 75,
+    "supplier": "Google",
+    "category": "Telefonos",
+    "stock": 88,
+    "locked": "Desbloqueado",
+    "photo": "https://imgs.search.brave.com/3InfvU5gzQ9xHA0ugWsRSshBovu6TVGl21SifbU3nh0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzE5OU4tVXoyQUwu/anBn",
+    "id": "4dd4861d0341fe28565ef35b"
+  },
+  {
+    "title": "Galaxy Z Flip5 Case Defender Series XT",
+    "price": 79.95,
+    "supplier": "Otterbox",
+    "category": "Accesorios",
+    "stock": 305,
+    "photo": "https://www.otterbox.com/dw/image/v2/BGMS_PRD/on/demandware.static/-/Sites-masterCatalog/default/dw859ebb49/productimages/dis/cases-screen-protection/defender-xt-galaxy-z-flip-5/defender-xt-galaxy-z-flip-5-black-4d.png?sw=1600&sh=1600",
+    "id": "e5a6cfe88a20aef64fd151c8"
+  },
+  {
+    "title": "Charging Pad for MagSafe (7.5W)",
+    "price": 22.46,
+    "supplier": "Otterbox",
+    "category": "Accesorios",
+    "stock": 122,
+    "photo": "https://www.otterbox.com/dw/image/v2/BGMS_PRD/on/demandware.static/-/Sites-masterCatalog/default/dwe7170b96/productimages/dis/power/charging-pad-magsafe/pad-wireless-radiantnight-wallkit.jpg?sw=1600&sh=1600",
+    "id": "40ae32be43e61e2a1024755e"
+  },
+  {
+    "title": "Xiaomi 14 Ultra",
+    "price": 1075,
+    "supplier": "Xiaomi",
+    "category": "Telefonos",
+    "stock": 2000,
+    "locked": "Desbloqueado",
+    "photo": "https://m.media-amazon.com/images/I/512vVHaEL9L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+    "id": "2a8372e31bceee3a444e938c"
+  },
+  {
+    "title": "Samsung Galaxy Tab S7",
+    "price": 238,
+    "supplier": "Samsung",
+    "category": "Tablets",
+    "stock": 20,
+    "photo": "https://imgs.search.brave.com/H8dy1CDis_p6iNfmuMS4XQyQs2rbsmlAuplGAEJEAdI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zczcu/dnp3LmNvbS9pcy9p/bWFnZS9WZXJpem9u/V2lyZWxlc3Mvc2Ft/c3VuZy1nYWxheHkt/dGFiLXM3LTVnLXBy/ZW1pdW0tMTEtaW4t/YmxhY2stdGFibGV0/LXNtdDg3OHV6a2E_/d2lkPTQ2NSZoZWk9/NDY1JmZtdD13ZWJw",
+    "id": "3912e9775dd517f0e269a018"
+  },
+  {
+    "title": "MacBook Pro Late 2023 (M3) - 16",
+    "price": 2009,
+    "supplier": "Apple",
+    "category": "Laptops",
+    "stock": 90,
+    "photo": "https://imgs.search.brave.com/-dRhWfMO4dvzSAoajORVBCKKT0xwIgNh8KTXUOmjgwM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5jbm4uY29tL2Fw/aS92MS9pbWFnZXMv/c3RlbGxhci9wcm9k/L2FwcGxlLTIwMjMt/bWFjYm9vay1wcm8t/bGFwdG9wLW0zLXBy/by5qcGc_Yz0xNng5/JnE9aF83MjAsd18x/MjgwLGNfZmlsbA",
+    "id": "302094c70f8de1a1fb52c733"
+  },
+  {
+    "title": "MacBook Pro 2023 - 14",
+    "price": 1222,
+    "supplier": "Apple",
+    "category": "Laptops",
+    "stock": 80,
+    "photo": "https://imgs.search.brave.com/TWUFa5xlbXLpT-G_HW9mKeY9fTMameTmCoW9jEEl_KA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iMmMt/Y29udGVudGh1Yi5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMDEvMTQtaW5j/aC1tYWNib29rLXBy/by0yMDIzLmpwZz9x/dWFsaXR5PTUwJnN0/cmlwPWFsbA",
+    "id": "9e4671621fb77c9637546eee"
+  },
+  {
+    "title": "Wireless Charger iPhone Charging Station",
+    "price": 10,
+    "supplier": "Apple",
+    "category": "Accesorios",
+    "stock": 900,
+    "photo": "https://m.media-amazon.com/images/I/61cIq+mTLqL._AC_SX679_.jpg",
+    "id": "00923c74c9a5b17d909bfcdb"
+  },
+  {
+    "title": "Xiaomi 13T PRO 5G + 4G LTE (512GB+12GB)",
+    "price": 588,
+    "supplier": "Xiaomi",
+    "category": "Telefonos",
+    "locked": "Desbloqueado",
+    "stock": 100,
+    "photo": "https://m.media-amazon.com/images/I/51801JejrKL._AC_SX679_.jpg",
+    "id": "cc469515f9589a0468c86a37"
+  },
+  {
+    "title": "Motorola razr | 2023 | 32MP Camera | Summer Lilac, 73.95 x 170.82 x 7.35mm",
+    "price": 439,
+    "supplier": "Motorola",
+    "category": "Telefonos",
+    "locked": "Desbloqueado",
+    "stock": 100,
+    "photo": "https://m.media-amazon.com/images/I/61nVT+i3rdL._AC_SX679_.jpg",
+    "id": "363921db9c1bbae49bb95cd4"
+  },
+  {
+    "title": "Samsung Galaxy A15 (SM-155M/DSN), 128GB 6GB RAM, Dual SIM",
+    "price": 149,
+    "supplier": "Samsung",
+    "category": "Telefonos",
+    "locked": "Desbloqueado",
+    "stock": 150,
+    "photo": "https://m.media-amazon.com/images/I/51rp0nqaPoL._AC_SX679_.jpg",
+    "id": "cbc428608920f5299e385dcb"
+  },
+  {
+    "title": "Apple AirTag",
+    "price": 24,
+    "supplier": "Apple",
+    "category": "Accesorios",
+    "stock": 1500,
+    "photo": "https://m.media-amazon.com/images/I/71rP7f78eFL._AC_SX466_.jpg",
+    "id": "15f5c514a3e1569fa9a19cc4"
+  },
+  {
+    "title": "Sony WH-1000XM4 Wireless Premium Noise Canceling Overhead Headphones with Mic",
+    "price": 229,
+    "supplier": "Sony",
+    "category": "Auriculares",
+    "stock": 1500,
+    "photo": "https://m.media-amazon.com/images/I/51DkbWZIg+L._AC_SX679_.jpg",
+    "id": "782071733227db4dac1ee8ae"
+  },
+  {
+    "title": "Ailun 3 Pack Screen Protector",
+    "price": 7,
+    "supplier": "Ailun",
+    "category": "Accesorios",
+    "stock": 16,
+    "photo": "https://m.media-amazon.com/images/I/815keamN-BL._AC_SX679_.jpg",
+    "id": "db696183b8d6619ee0c85a57"
+  },
+  {
+    "title": "Apple iPhone 16 Pro Clear Case with MagSafe and Camera Control",
+    "price": 39,
+    "supplier": "Apple",
+    "category": "Accesorios",
+    "stock": 160,
+    "photo": "https://m.media-amazon.com/images/I/71vZ5g0-+uL._AC_SX466_.jpg",
+    "id": "bffad1c96cd6cd31700f1383"
   }
 ]

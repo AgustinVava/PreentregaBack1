@@ -37,6 +37,15 @@ async function getUser(req, res, next) {
   }
 }
 
+const viewLogin = async (req, res, next) => {
+  try {
+    const users = await usersManager.readAll()
+      return res.render("login", { users })
+  } catch (error) {
+      next(error)
+  }
+}
+
 async function createUser(req, res, next) {
   try {
     const { email, password } = req.body;
@@ -94,4 +103,4 @@ async function destroyUser(req, res, next) {
   }
 }
 
-export { getAllUsers, getUser, createUser, updateUser, destroyUser };
+export { getAllUsers, getUser, createUser, updateUser, destroyUser, viewLogin };
