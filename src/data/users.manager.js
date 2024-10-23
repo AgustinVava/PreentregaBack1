@@ -4,9 +4,9 @@ import crypto from "crypto";
 class UsersManager {
   constructor(path) {
     this.path = path;
-    this.exists();
+    this.init(); 
   }
-  exists() {
+  init() {
     const exist = fs.existsSync(this.path);
     if (!exist) {
       fs.writeFileSync(this.path, JSON.stringify([]));
@@ -15,13 +15,13 @@ class UsersManager {
       console.log("The file already exists");
     }
   }
-  async readAll(category) {
+  async readAll(role) {
     try {
       const data = await fs.promises.readFile(this.path, "utf-8");
       const parseData = JSON.parse(data);
-      if (category) {
+      if (role) {
         const filteredData = parseData.filter(
-          (each) => each.category === category
+          (each) => each.role === role
         );
         return filteredData;
       } else {
@@ -82,7 +82,7 @@ class UsersManager {
       }
       const stringAll = JSON.stringify(filtered, null, 2);
       await fs.promises.writeFile(this.path, stringAll);
-      return `User with id ${id} deleted`;
+      return `User with id ${id} has been deleted`;
     } catch (error) {
       console.log(error);
       throw error;
