@@ -68,6 +68,8 @@ async function createUser(req, res, next) {
   }
 }
 
+
+
 async function updateUser(req, res, next) {
   try {
     const { uid } = req.params;
@@ -103,4 +105,13 @@ async function destroyUser(req, res, next) {
   }
 }
 
-export { getAllUsers, getUser, createUser, updateUser, destroyUser, viewLogin };
+const registerView = async (req, res, next) =>{
+  try {
+    const users = await usersManager.readAll()
+   return res.render("register", { users })   
+  } catch (error) {
+     return next(error) 
+  }
+}
+
+export { getAllUsers, getUser, createUser, updateUser, destroyUser, viewLogin, registerView };

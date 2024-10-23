@@ -13,12 +13,12 @@
   "license": "ISC",
   "devDependencies": {
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.7"
-  },
-  "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "express-handlebars": "^8.0.1",
     "socket.io": "^4.8.0"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.7"
   }
 }
