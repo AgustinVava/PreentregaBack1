@@ -1,13 +1,27 @@
-<section>
-<form>
-    <h1>CREATE ACCOUNT FORM</h1>
-    <input type="text" name="name" id="name" placeholder="Name">
-    <input type="email" name="email" id="email" placeholder="Email">
-    <input type="password" name="password" id="password" placeholder="Password">
-    <button class="btn btn-success" id="register" type="button" value="REGISTER">Register</button>
-</form>
+<section class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+      <form>
+        <h1 class="text-center fw-bold mt-4 mb-4">Formulario de registro</h1>
+        <input class="form-control mb-2" type="text" name="name" id="name" placeholder="Name">
+        <input class="form-control mb-2" type="email" name="email" id="email" placeholder="Email">
+        <input class="form-control mb-2" type="url" name="photo" id="photo" placeholder="Photo">
+        <input class="form-control mb-2" type="password" name="password" id="password" placeholder="Password">
+        <div id="passwordHelpBlock" class="form-text mb-3">
+          Su contraseña debe tener de 8-20 caracteres, contener letras y numeros, y no debe tener espacios, caracteres
+          especiales o emojis.
+        </div>
+        <button class="btn btn-success mb-3" id="register" type="button" value="REGISTER">Register</button>
+      </form>
+    </div>
+  </div>
 </section>
-<section>
-    <h2>LASTEST USERS</h2>
-    <span id="update"></span>
+
+<section class="d-flex justify-content-center align-items-center border">
+  <div class="container">
+    <div class="mb-3">
+      <h2 class="card-title text-center fw-bold mt-3 mb-3">Ultimos usuarios</h2>
+      <span class="text-center" id="update"></span>
+    </div>
+  </div>
 </section>

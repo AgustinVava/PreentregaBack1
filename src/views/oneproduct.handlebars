@@ -1,4 +1,32 @@
-<h1>{{one.title}}</h1>
-<img src={{one.photo}} alt="">
-<h3>{{one.price}}</h3>
-<h3>{{one.stock}}</h3>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src={{one.photo}} alt="Product Image" class="img-fluid">
+        </div>
+
+
+
+        <div class="col-md-6">
+            <h1>{{one.title}}</h1>
+            <p class="text-muted">{{one.supplier}}</p>
+            <h2 class="text-success">${{one.price}}</h2>
+
+            <!-- Product Specifications -->
+            <ul class="list-group mb-3">
+                <li class="list-group-item"><strong>Stock: </strong>{{one.stock}}</li>
+                <li class="list-group-item"><strong>Screen Size:</strong> 6.5 inches</li>
+                <li class="list-group-item"><strong>Battery Life:</strong> 24 hours</li>
+                <li class="list-group-item"><strong>Storage Capacity:</strong> 128GB</li>
+                <li class="list-group-item"><strong>Camera:</strong> 12 MP Dual</li>
+                <li class="list-group-item"><strong>Operating System:</strong> Android 12</li>
+            </ul>
+
+
+            <div class="mb-3">
+                <h4>Customer Reviews</h4>
+                <p>⭐⭐⭐⭐☆ (4/5)</p>
+                <p>"Amazing phone! Great performance and camera."</p>
+            </div>
+        </div>
+    </div>
+</div>
