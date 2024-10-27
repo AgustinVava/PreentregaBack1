@@ -14,6 +14,8 @@ Por aca algunos ejemplos:
 
 ## MongoDB
 ![Captura de pantalla 2024-10-26 211739](https://github.com/user-attachments/assets/5f64a9f9-4cdf-4332-894d-5ad587225f55)
+![Captura de pantalla 2024-10-26 211901](https://github.com/user-attachments/assets/4a822cd8-ee86-4ae4-ab8e-f928d07ad383)
+
 
 
 ## Construido con 🛠️
