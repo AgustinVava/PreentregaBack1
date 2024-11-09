@@ -1,4 +1,4 @@
-import usersManager from "../../src/data/users.manager.js";
+import usersManager from "../data/users.manager.js";
 
 async function getAllUsers(req, res, next) {
   try {

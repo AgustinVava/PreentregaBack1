@@ -1,4 +1,6 @@
-import productsManager from "../../src/data/products.manager.js";
+import productsManager from "../data/products.manager.js";
+import productsMongoManager from "../data/fs/mongo/managers/product.mongo.js";
+import Product from "../data/fs/mongo/models/product.model.js";
 
 async function getAllProducts(req, res, next) {
   try {
@@ -145,6 +147,57 @@ async function showOneProduct(req, res, next) {
   }
 }
 
+async function create (req, res, next) {
+try {
+  const data = req.body
+  const response = await productsMongoManager.create(data)
+  return res.status(201).json({ message: "Product Created", response: response._id })
+} catch (error) {
+  return next(error)
+}  
+}
+
+async function readAll (req, res, next) {
+  try {
+    const { pid } = req.params
+    const response = await productsMongoManager.readAll()
+    return res.status(200).json({message: "Products read successfully", response})
+  } catch (error) {
+    return next(error) 
+  }
+}
+
+async function read (req, res, next) {
+  try {
+    const { pid } = req.params
+    const response = await productsMongoManager.read(pid)
+    return res.status(200).json({message: "Product read successfully", response})
+  } catch (error) {
+    return next(error)
+  }
+}
+
+async function update (req, res, next) {
+  try {
+    const { pid } = req.params
+    const data = req.body
+    const response = await productsMongoManager.update(pid, data)
+    return res.status(200).json({message: "Product updated", response})
+  } catch (error) {
+    return next(error)
+  }
+}
+
+async function destroy (req, res, next) {
+  try {
+    const { pid } = req.params
+    const response = await productsMongoManager.destroy(pid)
+    return res.status(200).json({message: "Product destroyed", response})
+  } catch (error) {
+    return next(error)
+  }
+}
+
 export {
   getAllProducts,
   getProduct,
@@ -153,5 +206,10 @@ export {
   destroyProduct,
   showProducts,
   showOneProduct,
-  createGet
+  createGet,
+  create,
+  update,
+  read,
+  readAll,
+  destroy
 };
